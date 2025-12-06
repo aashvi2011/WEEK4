@@ -143,3 +143,5 @@ S-type	store instructions
 
 All registers use 5-bit addressing →
 2⁵ = 32 registers → x0 to x31
+
+
