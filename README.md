@@ -1,6 +1,6 @@
 # WEEK4
-WEEK 4 — RISC-V Notes (Formatted & Cleaned)
-🔹 Introduction
+WEEK 4 — RISC-V Notes
+# 🔹 Introduction
 
 RISC-V is the language of the computer, defining how hardware understands instructions.
 
@@ -8,7 +8,7 @@ Programs written in high-level languages are compiled into assembly, then conver
 
 Machine instructions (bits) are what the computer actually executes at the hardware layout level.
 
-🔹 Software-to-Hardware Flow
+# 🔹 Software-to-Hardware Flow
 High-level Program (C/C++/Java)
         ↓
 Compiler → Assembly Code
@@ -17,7 +17,7 @@ Assembler → Machine Code (Binary)
         ↓
 Hardware executes instructions
 
-🔹 System Software
+# 🔹 System Software
 
 System software contains three main components:
 
@@ -27,7 +27,7 @@ Compiler
 
 Assembler
 
-OS Responsibilities:
+# OS Responsibilities:
 
 Handles memory, I/O operations, allocation & deallocation.
 
@@ -45,7 +45,7 @@ Converts assembly instructions into binary machine code.
 
 Binary is fed to hardware — the hardware recognizes patterns and executes functions accordingly.
 
-🔹 Instruction Set Architecture (ISA)
+# 🔹 Instruction Set Architecture (ISA)
 
 Defines how the programmer communicates with the computer.
 
@@ -63,7 +63,7 @@ Floating-point extensions: RV64F / RV64D
 
 Examples: flw, fadd.s, fmul.s
 
-🔹 Registers & Data Representation
+# 🔹 Registers & Data Representation
 Type	Size
 Doubleword	64-bit
 Word	32-bit
@@ -79,7 +79,7 @@ Pattern capacity:
 
 32-bit → 2³² = 4,294,967,296
 
-🔹 Negative Number Representation
+# 🔹 Negative Number Representation
 
 Uses Two’s Complement
 
@@ -90,7 +90,7 @@ Add 1
 ⚠ Bug note:
 Using int instead of long long int causes overflow for 64-bit values because int holds only 32 bits.
 
-🔹 ABI, System Calls & Hardware Interface
+# 🔹 ABI, System Calls & Hardware Interface
 
 ABI (Application Binary Interface) allows direct register and system call access.
 
@@ -114,13 +114,13 @@ sd x8, 8(x23)
 
 Registers are limited — hence storage back to memory is necessary.
 
-🔹 Endianness
+# 🔹 Endianness
 
 Little-endian (RISC-V default): MSB is stored at the higher address (on top)
 
 Big-endian: LSB stored on top
 
-🔹 Instruction Format Overview
+# 🔹 Instruction Format Overview
 
 All RISC-V instructions are 32 bits.
 
@@ -134,7 +134,7 @@ rs2 — source register (if needed)
 
 rd — destination register
 
-Types of Instructions:
+# Types of Instructions:
 
 Type	Description
 R-type	operates only on registers
